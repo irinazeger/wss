@@ -1,0 +1,1259 @@
+* {
+    padding: 0;
+    margin: 0;
+    --main-content-max-width: 1170px;
+    --main-content-max-height: 1200px;
+    --main-content-min-height: 900px;
+}
+
+.body {
+    font-family: Airbnb Cereal App, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #697687;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+.container {
+    max-width: var(--main-content-max-width);
+   margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background: #F8F8F8;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+    width: var(--main-content-max-width);
+}
+.header-nav{
+    margin: 0 254px 0 261px;
+}
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.header-nav li:not(:last-child){
+    margin-right: 40px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #002248;
+}
+
+.header-nav a:hover {
+    color: #3685FB;;
+
+}
+
+.btn, a.btn {
+    padding: 16px 28px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+
+.home-img-big {
+    width: 400px;
+    height: 540px;
+    border: 10px solid #FFFFFF;
+    border-radius: 570px;
+}
+
+.home-row {
+    display: flex;
+    padding-top: 90px;
+}
+
+.home-img-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.home-img-small {
+    position: absolute;
+    left: 240px;
+    top: 170px;
+    width: 320px;
+    height: 430px;
+    border: 10px solid #FFFFFF;
+    border-radius: 570px;
+}
+
+.home-content {
+    flex: 1;
+    padding-left: 68px;
+    padding-top: 85px;
+}
+
+.home-content-subtitle {
+    font-weight: 500;
+    color: #00B3A0;
+}
+
+.home-content-subtitle + * {
+    margin-top: 10px;
+}
+
+.home-content-title {
+    color: #002248;
+    font-weight: 550;
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.home-content-title + * {
+    margin-top: 20px;
+}
+
+.home-content-text {
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #697687;
+}
+
+.home-content-text + * {
+    margin-top: 50px;
+}
+
+.home-content-btn, a.home-content-btn {
+    height: 50px;
+    padding: 20px 46px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.home-content-btn:hover {
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+
+
+.book-now-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -63px;
+    margin-left: 95px;
+    margin-right: 95px;
+    left: 0px;
+    right: 0px;
+    background: #FCFCFC;
+    box-shadow: 0 40px 170px rgba(0, 34, 72, 0.07);
+    border-radius: 30px;
+}
+
+.book-now-btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.book-now-btn, a.book-now-btn {
+    padding-left: 61px;
+    padding-right: 61px;
+    padding-bottom: 40px;
+    border-radius: 0px 30px 30px 0px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.book-now-btn-icon {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.book-now-menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border-radius: 0px 30px 30px 0px;
+    padding-top: 44px;
+    padding-left: 72px;
+    padding-right: 49px;
+
+}
+
+a.book-now-menu-item-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #002248;
+    text-decoration: none;
+
+}
+.book-now-menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+.book-now-select{
+    display: none;
+    position: absolute;
+    background-color: #fcfcfc;
+    min-width: 150px;
+    z-index: 1;
+    border-radius: 10px;
+
+
+}
+.book-now-select a {
+    color: #697687;
+    padding: 20px 0  16px;
+    text-decoration: none;
+    display: block;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+.book-now-select a:hover {
+    color: #3685FB;
+}
+
+.book-now-menu-item:hover .book-now-select {
+    display: block;
+}
+
+
+.shevron-select{
+    padding-left: 9px;
+}
+
+.section-white {
+    background: #FFFFFF;
+    height: 100vh;
+    min-height: var(--main-content-min-height);
+    max-height: var(--main-content-max-height);
+}
+
+.section-grey {
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    min-height: var(--main-content-min-height);
+    max-height: var(--main-content-max-height);
+}
+
+.steps-subtitle {
+    margin-top: 198px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #00B3A0;
+}
+
+.steps-title {
+    margin-top: 10px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: capitalize;
+
+
+    color: #002248;
+}
+
+.steps-text {
+    margin-top: 20px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #697687;
+}
+
+.steps-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.steps-content-item-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 74px 58px 70px 58px;
+    margin-right: 30px;
+}
+.steps-content-item-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 74px 48px 70px 48px;
+    margin-right: 30px;
+}
+.steps-content-item-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 74px 32px 70px 32px;
+}
+
+.content-item-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-item-img-box{
+    height: 115px;
+    padding-bottom: 45px
+}
+
+
+.content-item-title {
+    font-family: Airbnb Cereal App, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #002248;
+}
+
+.content-item-text {
+    font-family: Airbnb Cereal App, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #697687;
+}
+
+.location-content {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.location-content-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 380px 30px 30px 30px;
+
+    border: 6px solid #FFFFFF;
+    border-radius: 10px;
+    background-image: url("../images/image 5 (2).png");
+    background-size: cover;
+}
+.location-content-item2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 380px 30px 30px 30px;
+    border: 6px solid #FFFFFF;
+    border-radius: 10px;
+    background-image: url("../images/image 5 (3).png");
+    background-size: cover;
+
+}.location-content-item3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 380px 30px 30px 30px;
+    border: 6px solid #FFFFFF;
+    border-radius: 10px;
+    background-image: url("../images/image 5 (4).png");
+     background-size: cover;
+
+
+}
+.location-content-item-info-box{
+    display: flex;
+    padding: 23px 20px 22px 20px;
+    background: rgba(0, 34, 72, 0.3);
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 10px;
+
+}
+.location-subtitle {
+    padding-top: 120px;
+    padding-bottom: 10px;
+    font-family: Airbnb Cereal App, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #00B3A0;
+}
+.location-title{
+    padding-bottom: 20px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #002248;
+}
+.location-row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.location-text{
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #697687;
+}
+
+
+.location-content-item-info{
+    padding-right: 33px;
+    padding-bottom: 7px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    color: #FFFFFF;
+}
+.location-content-item-info-city{
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+    color: #FFFFFF;
+}
+
+.location-content-item-info-price{
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    text-align: right;
+    color: #FFFFFF;
+}
+.location-content-item-info-rating{
+    padding-bottom: 10px;
+}
+
+
+.section-tour{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    min-height: var(--main-content-min-height);
+    max-height: var(--main-content-max-height);
+    background-image: url("../images/image6.png");
+    background-repeat: no-repeat;
+}
+
+.tour-left-column{
+    display: flex;
+    padding-top: 285px;
+    padding-left: 190px;
+}
+.tour-video-shadow{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+}
+.tour-video-btn{
+    display: flex;
+    padding: 27px 26px 26px 30px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.tour-right-column{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/Vector (16).png");
+    height: 100%;
+    width: 78%;
+    margin-left: auto;
+    padding-top: 172px;
+}
+.tour-content-wrapper{
+    margin: 0 auto;
+}
+.tour-subtitle{
+    padding-bottom: 10px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #00B3A0;
+}
+.tour-title{
+    padding-bottom: 20px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #002248;
+}
+.tour-text{
+    padding-bottom: 70px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+
+    /* Paragraph Color H3 */
+
+    color: #697687;
+}
+
+.tour-btn, a.tour-btn{
+    padding: 20px 46px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.tour-btn:hover {
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+
+.compass-img{
+    position: absolute;
+    bottom: 150px;
+    padding-right: 150px;
+}
+.tour-grid-img{
+    position: absolute;
+    padding-top: 418px;
+    right: 0.86%;
+}
+.about-img-big {
+    width: 400px;
+    height: 610px;
+    border: 10px solid #FFFFFF;
+    border-radius: 570px;
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-img-wrapper {
+    position: relative;
+}
+
+.about-img-small {
+    position: absolute;
+    right: 290px;
+    top: 170px;
+    width: 320px;
+    height: 456px;
+    border: 10px solid #FFFFFF;
+    border-radius: 570px;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 265px;
+}
+
+.about-content-subtitle {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #00B3A0;
+}
+
+
+.about-content-title {
+    padding-bottom: 20px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    /* or 124% */
+
+    text-transform: capitalize;
+
+    /* Blue Dark */
+
+    color: #002248;
+}
+.about-content-text {
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #697687;
+    padding-bottom: 50px;
+}
+.about-content-stats{
+    display: flex;
+    padding-bottom: 26px;
+}
+.about-content-item{
+    border: 2px solid #F8F8F8;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+.about-content-item-title{
+    padding-top: 32px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 32px;
+    line-height: 34px;
+    /* identical to box height, or 106% */
+    text-align: center;
+    color: #3685FB;
+}
+.about-content-item-text{
+    padding: 4px 23px 32px 23px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #002248;
+}
+.testimonials-wrapper{
+    height: 100%;
+    background: url("../images/Map (1).png") no-repeat;
+}
+
+.testimonials-subtitle{
+    padding-top: 120px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    text-align: center;
+
+    /* Blue Light */
+
+    color: #00B3A0;
+}
+.testimonials-title{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    /* identical to box height, or 124% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    /* Blue Dark */
+
+    color: #002248;
+}
+.testimonials-text{
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+
+    /* Paragraph Color H3 */
+
+    color: #697687;
+
+}
+.testimonials-avatar{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.testimonials-avatar img{
+    background: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+.testimonials-content{
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 32px 50px 30px 50px;
+    border-radius: 10px;
+}
+.testimonials-quote{
+    padding-bottom: 23px;
+}
+.quote-text {
+    padding-bottom: 14px;
+    font-family: Airbnb Cereal "Airbnb Cereal App" ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    text-align: center;
+
+    /* Paragraph Color H3 */
+
+    color: #697687;
+}
+.testimonial-author{
+    padding-bottom: 2px;
+    font-family: Airbnb Cereal App, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+
+    /* Blue Dark */
+
+    color: #002248;
+}
+.testimonial-status{
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height, or 140% */
+
+    text-align: center;
+
+    /* Paragraph Color H3 */
+
+    color: #697687;
+}
+.testimonials-pagination{
+    padding-top: 30px;
+}
+.testimonials-pagination img{
+    padding-right: 5px;
+}
+.social-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-gallery img:nth-child(1){
+    border-radius: 0 570px 570px 0;
+
+}
+.social-gallery img:nth-child(even){
+    border-radius: 10px;
+
+}.social-gallery img:nth-child(3){
+    border-radius: 570px;
+
+}.social-gallery img:last-child{
+    border-radius: 570px 0 0 570px;
+
+}
+.social-subtitle {
+    margin-top: 120px;
+    font-family: Airbnb Cereal App, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #00B3A0;
+}
+
+.social-title {
+    margin-top: 10px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: capitalize;
+    color: #002248;
+}
+.social-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 62px;
+}
+.social-btn, a.social-btn {
+    padding: 20px 48px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.social-btn:hover {
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+
+.section-white-end{
+    padding-bottom: 100px;
+}
+.container-end {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 0 80px;
+    background: #F3F8FF;
+    border-radius: 40px;
+}
+.contact-subtitle{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+
+    /* Blue Light */
+
+    color: #00B3A0;
+}
+.contact-title{
+    padding-bottom: 30px;
+    font-family: Eksell Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 60px;
+    /* or 115% */
+
+    text-transform: capitalize;
+
+    /* Blue Dark */
+
+    color: #002248;
+}
+.contact-btn{
+    padding: 20px 42px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.contact-btn:hover {
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--main-content-max-width);
+    padding-bottom: 37px;
+    border-bottom: 1px solid rgba(105, 118, 135, 0.1);
+}
+
+
+}
+.footer-nav{
+    margin: 0 222px 0 261px;
+}
+.footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.footer-nav li:not(:last-child){
+    margin-right: 40px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #002248;
+}
+
+.footer-nav a:hover {
+    color: #3685FB;
+
+}
+.social-icons{
+    display: flex;
+}
+
+.social-icons div:not(:last-child){
+    margin-right: 12px;
+}
+.icon-fb{
+    padding: 11px 16px;
+    border: 1px solid #697687;
+    box-sizing: border-box;
+    border-radius: 33.75px;
+}
+.icon-ig{
+    padding: 12px 13px;
+    border: 1px solid #697687;
+    box-sizing: border-box;
+    border-radius: 33.75px;
+}
+.icon-pin{
+    padding: 11px 12px;
+    border: 1px solid #697687;
+    box-sizing: border-box;
+    border-radius: 33.75px;
+}
+.rights{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: Airbnb Cereal App;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    /* Paragraph Color H3 */
+
+    color: #697687;
+}
+
+/* Слайдер */
+.slick-slider{
+    min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide{
+}
+/* Слайд активный */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+/* Конкретный слайдер */
+.slider-2 {
+    position: relative;
+    padding: 0 348px;
+}
+
+.slider-2 .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0 0;
+
+}
+.slider-2 .slick-dots li{
+    list-style: none;
+    margin: 0px 5px;
+
+}
+.slider-2 .slick-dots button{
+    font-size: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    border: solid rgba(105, 118, 135, 0.3);
+}
+
+.slider-2 .slick-dots li.slick-active button{
+    font-size: 0;
+    width: 20px;
+    height: 6px;
+    border-radius: 6px;
+    background: #3685FB;
+
+}
+.slider-1{
+    position: relative;
+}
+.slider-1 .slick-slide{
+    margin: 0 7px;
+}
+
+.slider-1 .slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+.slider-1 .slick-arrow.slick-prev{
+    top: -71px;
+    right: 60px;
+    background: url('../images/Vector (2).svg')  #FFFFFF  50% no-repeat;
+    border-radius: 5px;
+}
+.slider-1 .slick-arrow.slick-next{
+    top: -71px;
+    right: 0;
+    background: url('../images/Vector (3).svg')  #3685FB 50% no-repeat;
+    border-radius: 5px;
+
+}
+.slider-1 .slick-arrow.slick-disabled{
+    opacity: 0.2;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 0;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.modal-container {
+
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 30%;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.signupbtn{
+   width: 100%;
+    padding: 16px 28px;
+    border-radius: 10px;
+    background-color: #3685FB;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 0.4s;
+    border: 1px solid #3685FB;
+}
+.signupbtn:hover{
+    background-color: transparent;
+    color: #3685FB;
+    border: 1px solid #3685FB;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#button {
+    display: inline-block;
+    background: url('../images/Vector (3).svg')  #3685FB  50% no-repeat;
+    transform: rotate(270deg);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button::after {
+
+}
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button:active {
+    background-color: #555;
+}
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
